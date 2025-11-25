@@ -10,18 +10,18 @@ class Account:
     def debit(self,amount):
         self.balance -= amount
         print("rs", amount, "was debited")
-        print("total balance=", self.balance())
+        print("total balance=", self.get_balance())
 
 
     #credit method
     def credit(self,amount):
      self.balance += amount  
      print("rs",amount, "was credited")
-     print("total balance=", self.balance())
+     print("total balance=", self.get_balance())
 
 
-def get_balance(self):
-   return self.balance
+    def get_balance(self):
+     return self.balance
         
      
 #object created and method calling
